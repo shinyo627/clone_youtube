@@ -13,104 +13,157 @@
     ></script>
   </head>
   <body>
-    <nav class="nav-bar">
-      <div class="nav-bar-logo">
-        <i class="fa-solid fa-video"></i>
-        <a href="#">cloned_youtube</a>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span class="title">cloned_youtube</span>
       </div>
-
-      <div>
-        <a class="icon-btn">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </a>
-
-        <a class="icon-btn">
-          <i class="fa-solid fa-bars"></i>
-        </a>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
       </div>
-    </nav>
+    </header>
 
-    <main>
-      <video width="320" height="240" controls>
-        <source src="Video Link" />
-      </video>
+    <!-- Vid -->
+    <section class="player">
+      <video src="" controls></video>
+    </section>
 
-      <section class="main-grids">
-        <article class="grid-main">
-          <div class="vid-info">
-            <a href="#">#DreamCoding</a>
-
-            <div class="vid-info-description">
-              <h3>
-                Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라
-                만들기 | 프론트앤드 개발자 입문편: HTML, CSS, Javascript 드림...
-              </h3>
-
-              <button class="icon-btn">
-                <i class="fa-solid fa-caret-down"></i>
-              </button>
-            </div>
-            <span>1M views 1month ago</span>
+    <div class="info-and-up-next">
+      <!-- INFO -->
+      <section class="info">
+        <!-- Metadata -->
+        <div class="metadata">
+          <ul class="hashtags">
+            <li>#DreamCoding</li>
+            <li>#DreamCoders</li>
+            <li>#Ellie</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title">
+              클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오)
+              | 프론트엔드 개발자 입문편: HTML, CSS, Javascript 드림코딩과
+              함께하는 프론트엔드 실전 입문편
+            </span>
+            <button class="more-btn">
+              <i class="fas fa-caret-down"></i>
+            </button>
           </div>
-
-          <div class="vid-features-bar">
-            <a class="icon-btn">
-              <i class="fa-light fa-thumbs-up"></i>
-            </a>
-            <a class="icon-btn">
-              <i class="fa-light fa-thumbs-down"></i>
-            </a>
-            <a class="icon-btn">
-              <i class="fa-solid fa-share"></i>
-            </a>
-            <a class="icon-btn">
-              <i class="fa-solid fa-plus"></i>
-            </a>
-            <a class="icon-btn">
-              <i class="fa-solid fa-flag"></i>
-            </a>
-          </div>
-
-          <div class="vid-creator-profile">
-            <div>
-              <img
-                src="./assets/stephen-leonardi-ljNJn0ommQ8-unsplash.jpg"
-                alt="video creator profile"
-              />
-
-              <div>
-                <h3>Dreamcoding by 엘리</h3>
-                <span>1M subscribers</span>
-              </div>
-            </div>
-
-            <button class="icon-btn">Subscribe</button>
-          </div>
-
-          <div class="vid-comments"></div>
-        </article>
-
-        <aside class="grid-play-list">
-          <h5>Up next</h5>
-          <article>
+          <span class="views">1M views 1 month ago</span>
+        </div>
+        <!-- Actions -->
+        <ul class="actions">
+          <li>
+            <button>
+              <i class="active fas fa-thumbs-up"> </i>
+              <span>1K</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fas fa-thumbs-down"> </i>
+              <span>0</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fas fa-share"> </i>
+              <span>Share</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fas fa-plus"> </i>
+              <span>Save</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fab fa-font-awesome-flag"> </i>
+              <span>Report</span>
+            </button>
+          </li>
+        </ul>
+        <!-- Channel -->
+        <div class="channel">
+          <div class="metadata">
             <img
-              src="./assets/ralston-smith-zc9pWsPZd4Y-unsplash.jpg"
-              alt="video thumbnail"
+              src="./assets/stephen-leonardi-ljNJn0ommQ8-unsplash.jpg"
+              alt="channel profile picture"
             />
-
-            <div>
-              <h4>
-                프론트앤드 강의, 프론트앤드 개발자가 되고싶다면? 웹개발 입문자편
-                강의를 시작합니다.
-              </h4>
-              <span>드림코딩 by 앨리</span>
-              <span>82K views</span>
+            <div class="info">
+              <span class="name">드림코딩 by 엘리</span>
+              <span class="subscribers">1M subscribers</span>
             </div>
-
-            <i class="fa-solid fa-bars"></i>
-          </article>
-        </aside>
+          </div>
+          <button class="subscribe">subscribe</button>
+        </div>
       </section>
-    </main>
+
+      <!--PLAYLIST -->
+      <section class="up-next">
+        <span class="title">Up next</span>
+        <ul>
+          <li class="item">
+            <div class="img">
+              <img
+                src="./assets/ralston-smith-zc9pWsPZd4Y-unsplash.jpg"
+                alt="play list video 1"
+              />
+            </div>
+            <div class="info">
+              <span class="title"
+                >프론트엔드 강의 - 프론트엔드 개발자 되기 입문편⭐️ (개념 +
+                클론코딩)</span
+              >
+              <span class="name">드림코딩 by 엘리</span>
+              <span class="views">82K views</span>
+            </div>
+            <button class="more-btn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img">
+              <img
+                src="./assets/ralston-smith-zc9pWsPZd4Y-unsplash.jpg"
+                alt="play list video 1"
+              />
+            </div>
+            <div class="info">
+              <span class="title"
+                >프론트엔드 강의 - 프론트엔드 개발자 되기 입문편⭐️ (개념 +
+                클론코딩)</span
+              >
+              <span class="name">드림코딩 by 엘리</span>
+              <span class="views">82K views</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img">
+              <img
+                src="./assets/ralston-smith-zc9pWsPZd4Y-unsplash.jpg"
+                alt="play list video 1"
+              />
+            </div>
+            <div class="info">
+              <span class="title"
+                >프론트엔드 강의 - 프론트엔드 개발자 되기 입문편⭐️ (개념 +
+                클론코딩)</span
+              >
+              <span class="name">드림코딩 by 엘리</span>
+              <span class="views">82K views</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
